@@ -1,34 +1,33 @@
-import React from 'react';
+import React from 'react'
 import {
   AppRegistry,
   asset,
   Pano,
   Text,
   View,
-} from 'react-vr';
+} from 'react-vr'
+import text from './text'
+import RichText from './RichText'
 
 export default class ReactVRDraftJS extends React.Component {
   render() {
     return (
       <View>
         <Pano source={asset('chess-world.jpg')}/>
-        <Text
+        <View
           style={{
-            backgroundColor: '#777879',
-            fontSize: 0.8,
-            fontWeight: '400',
+            backgroundColor: '#222',
             layoutOrigin: [0.5, 0.5],
-            paddingLeft: 0.2,
-            paddingRight: 0.2,
-            textAlign: 'center',
-            textAlignVertical: 'center',
+            padding: 0.1,
             transform: [{translate: [0, 0, -3]}],
-          }}>
-          hello
-        </Text>
+            width: 2,
+          }}
+        >
+          <RichText text={text} />
+        </View>
       </View>
-    );
+    )
   }
-};
+}
 
-AppRegistry.registerComponent('ReactVRDraftJS', () => ReactVRDraftJS);
+AppRegistry.registerComponent('ReactVRDraftJS', () => ReactVRDraftJS)

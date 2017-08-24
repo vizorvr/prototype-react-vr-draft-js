@@ -4,6 +4,8 @@ import redraft from 'redraft'
 
 const BLOCK_SPACING = 0.07
 
+// Define callbacks for block and entity rendering.
+// See: https://github.com/lokiuz/redraft
 const renderers = {
   inline: {},
   blocks: {
@@ -25,6 +27,8 @@ const renderers = {
     },
   },
   entities: {
+    // We don't actually want to render links in VR, but this code is here as an
+    // example for DOM rendering that will be implemented at some point.
     LINK: (children) => <Text style={{ color: '#3af' }}>{children}</Text>
   }
 }

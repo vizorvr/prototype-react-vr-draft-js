@@ -8,7 +8,6 @@ const renderers = {
   inline: {},
   blocks: {
     unstyled: (children) => {
-      console.log(children)
       return (
         <View style={{ flexDirection: 'column' }}>
           {children.map(child => (

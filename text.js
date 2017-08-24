@@ -1,3 +1,6 @@
+// This is the RawDraftContentState representation of Draft JS content state.
+// It is obtained by calling convertToRaw(editorState.getCurrentContent()).
+// See: https://draftjs.org/docs/api-reference-data-conversion.html
 export default {
     "entityMap": {
         "0": {

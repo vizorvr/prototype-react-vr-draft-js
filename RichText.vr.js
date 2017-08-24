@@ -23,19 +23,8 @@ const renderers = {
         </View>
       )
     },
-    atomic: (children) => (
-      <View
-        style={{
-          height: 0.005,
-          backgroundColor: '#fff',
-          marginTop: BLOCK_SPACING / 2,
-          marginBottom: BLOCK_SPACING / 2,
-        }}
-      />
-    ),
   },
   entities: {
-    SEPARATOR: () => null,
     LINK: (children) => <Text style={{ color: '#3af' }}>{children}</Text>
   }
 }

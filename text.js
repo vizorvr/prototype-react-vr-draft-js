@@ -24,41 +24,11 @@ export default {
         {
             "data": {},
             "depth": 0,
-            "entityRanges": [
-                {
-                    "offset": 0,
-                    "length": 1,
-                    "key": 2
-                }
-            ],
-            "inlineStyleRanges": [],
-            "key": "block0",
-            "text": " ",
-            "type": "atomic"
-        },
-        {
-            "data": {},
-            "depth": 0,
             "entityRanges": [],
             "inlineStyleRanges": [],
             "key": "block1",
             "text": "Oil on canvas | 1913",
             "type": "unstyled"
-        },
-        {
-            "data": {},
-            "depth": 0,
-            "entityRanges": [
-                {
-                    "offset": 0,
-                    "length": 1,
-                    "key": 2
-                }
-            ],
-            "inlineStyleRanges": [],
-            "key": "block2",
-            "text": " ",
-            "type": "atomic"
         },
         {
             "data": {},
